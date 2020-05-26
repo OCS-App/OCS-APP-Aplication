@@ -35,4 +35,17 @@
         <item>19번</item>
         <item>20번</item>
     </string-array>
+
+    <string-array name="major">
+        <item>앱(프론트 엔드)</item>
+        <item>앱(백 엔드)</item>
+        <item>웹(프론트 엔드)</item>
+        <item>웹(백 엔드)</item>
+        <item>서버</item>
+        <item>게임</item>
+        <item>인공지능</item>
+        <item>IoT</item>
+        <item>디자인</item>
+        <item>그래픽</item>
+    </string-array>
 </resources>
