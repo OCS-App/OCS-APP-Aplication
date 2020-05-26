@@ -34,9 +34,9 @@ public class JSONTask_ extends AsyncTask<String,String,String> {
             jsonObject.accumulate("e_mail",urls[1]);
             jsonObject.accumulate("pw",urls[2]);
             jsonObject.accumulate("name",urls[3]);
-            jsonObject.accumulate("grade",urls[4]);
-            jsonObject.accumulate("classNum",urls[5]);
-            jsonObject.accumulate("number",urls[6]);
+            jsonObject.accumulate("grade",Integer.parseInt(urls[4]));
+            jsonObject.accumulate("classNum",Integer.parseInt(urls[5]));
+            jsonObject.accumulate("number",Integer.parseInt(urls[6]));
             jsonObject.accumulate("major",urls[7]);
 
             HttpURLConnection con = null;
