@@ -1,166 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="40sp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-        android:singleLine="false"
-        android:text="OCS\n가입하기"
-        android:textSize="40sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-    <EditText
-        android:id="@+id/id_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="아이디"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="OCS\n가입하기"
+            android:textSize="40sp" />
 
-    <EditText
-        android:id="@+id/id_pw"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:hint="비밀번호"
-        android:inputType="textPassword"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_email" />
+        <EditText
+            android:id="@+id/id_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="아이디"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/id_name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="이름"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_pw" />
+        <EditText
+            android:id="@+id/id_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textSize="24sp" />
 
+        <EditText
+            android:id="@+id/id_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_name">
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="학년/반/번호"
-                android:textSize="24sp" />
-
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border"
-                android:orientation="horizontal">
+                android:layout_weight="2"
+                android:orientation="vertical">
 
-                <Spinner
-                    android:id="@+id/id_class"
+                <TextView
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_height="wrap_content"
+                    android:text="학년/반/번호"
+                    android:layout_weight="1"
+                    android:textSize="24sp" />
 
-                <Spinner
-                    android:id="@+id/id_classnum"
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border"
+                    android:orientation="horizontal">
 
-                <Spinner
-                    android:id="@+id/id_num"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
+                    <Spinner
+                        android:id="@+id/id_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/id_classnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Spinner
+                        android:id="@+id/id_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="취업 희망 분야"
-                android:textSize="24sp" />
-
-
             <LinearLayout
-                android:id="@+id/major_text"
+                android:layout_marginTop="24dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/layout_border">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                <Spinner
-                    android:id="@+id/major_array"
+                <TextView
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="wrap_content"
+                    android:text="취업 희망 분야"
+                    android:layout_weight="1"
+                    android:textSize="24sp" />
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/major_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_border">
+
+                    <Spinner
+                        android:id="@+id/major_array"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
 
     <Button
+        android:layout_weight="1"
         android:id="@+id/button2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Button" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
