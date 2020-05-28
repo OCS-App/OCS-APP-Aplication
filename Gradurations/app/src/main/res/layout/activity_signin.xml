@@ -139,6 +139,7 @@
 
                     <Spinner
                         android:id="@+id/major_array"
+                        android:scrollbarSize="30dp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>

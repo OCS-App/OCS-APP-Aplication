@@ -50,20 +50,20 @@ public class SignInActivity extends AppCompatActivity {
         final String[] major_arr = getResources().getStringArray(R.array.major);
 
 
-        ArrayAdapter classAdapter = ArrayAdapter.createFromResource(this, R.array.id_class,android.R.layout.simple_spinner_item);
-        classAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter classAdapter = ArrayAdapter.createFromResource(this, R.array.id_class, R.layout.custom_spinner_list);
+        classAdapter.setDropDownViewResource(R.layout.customer_spinner);
         classSpinner.setAdapter(classAdapter);
 
-        ArrayAdapter classnumAdapter = ArrayAdapter.createFromResource(this, R.array.id_classnum, android.R.layout.simple_spinner_item);
-        classnumAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter classnumAdapter = ArrayAdapter.createFromResource(this, R.array.id_classnum, R.layout.custom_spinner_list);
+        classnumAdapter.setDropDownViewResource(R.layout.customer_spinner);
         classnumSpinner.setAdapter(classnumAdapter);
 
-        ArrayAdapter numAdapter = ArrayAdapter.createFromResource(this, R.array.id_num, android.R.layout.simple_spinner_item);
-        numAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter numAdapter = ArrayAdapter.createFromResource(this, R.array.id_num, R.layout.custom_spinner_list);
+        numAdapter.setDropDownViewResource(R.layout.customer_spinner);
         numSpinner.setAdapter(numAdapter);
 
-        ArrayAdapter majorAdapter = ArrayAdapter.createFromResource(this, R.array.major,android.R.layout.simple_spinner_item);
-        majorAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter majorAdapter = ArrayAdapter.createFromResource(this, R.array.major,R.layout.custom_spinner_list);
+        majorAdapter.setDropDownViewResource(R.layout.customer_spinner);
         majorSpinner.setAdapter(majorAdapter);
 
 
